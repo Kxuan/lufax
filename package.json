@@ -1,0 +1,11 @@
+{
+  "name": "lufax",
+  "version": "0.0.1",
+  "license": "GPLv3",
+  "main": "index.js",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "crawler": "^1.0.5",
+    "express": "^4.15.2"
+  }
+}

@@ -7,8 +7,7 @@ const fs = require("fs");
 const path = require("path");
 const vm = require('vm');
 
-let lujs_filename = path.join(__dirname, "lu.js");
-vm.runInThisContext("" + fs.readFileSync(lujs_filename), {filename: lujs_filename});
+const LuWenYingAnE = require('lu').LuWenYingAnE;
 
 let start_date = new Date();
 let end_date = new Date();

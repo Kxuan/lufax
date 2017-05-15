@@ -13,7 +13,7 @@ function dateRemoveTime(date) {
     d.setHours(0, 0, 0, 0);
     return d;
 }
-class RepaymentMethod {
+exports.RepaymentMethod = class RepaymentMethod {
     constructor(principal, interest, period_count) {
         this.principal = principal;
         this.interest = interest;
@@ -39,7 +39,7 @@ class RepaymentMethod {
         }
         return repaid;
     }
-}
+};
 RepaymentMethod.EqualPrincipalAndInterest = class EqualPrincipalAndInterest extends RepaymentMethod {
 
     constructor(principal, interest, period_count) {
@@ -90,7 +90,7 @@ RepaymentMethod.EqualPrincipalAndInterest = class EqualPrincipalAndInterest exte
     }
 };
 
-class RepaymentPeriod {
+exports.RepaymentPeriod = class RepaymentPeriod {
     constructor(start_date, end_date, multiple = 1) {
         if (start_date.getTimezoneOffset() !== end_date.getTimezoneOffset()) {
             throw Error("The start_date and end_date are not in same timezone.")
@@ -135,7 +135,7 @@ class RepaymentPeriod {
     nextDate(date) {
         throw Error("Not implement")
     }
-}
+};
 
 RepaymentPeriod.CalendarMonth = class CalendarMonth extends RepaymentPeriod {
     /**
@@ -172,7 +172,7 @@ class LuInvestment {
     }
 }
 
-class LuWenYingAnE extends LuInvestment {
+exports.LuWenYingAnE = class LuWenYingAnE extends LuInvestment {
     /**
      *
      * @param {Number} principal
@@ -254,4 +254,4 @@ class LuWenYingAnE extends LuInvestment {
 
         return this.schedule[day_index];
     }
-}
+};
