@@ -3,9 +3,8 @@
  */
 "use strict";
 
-const path = require("path");
 
-const cookieParser=require("cookie-parser");
+const cookieParser = require("cookie-parser");
 const express = require('express');
 const app = express();
 

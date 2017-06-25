@@ -7,7 +7,7 @@ const fs = require("fs");
 const path = require("path");
 const vm = require('vm');
 
-const LuWenYingAnE = require('lu').LuWenYingAnE;
+const LuWenYingAnE = require('./lu/emulator').LuWenYingAnE;
 
 let start_date = new Date();
 let end_date = new Date();

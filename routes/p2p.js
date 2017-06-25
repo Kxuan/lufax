@@ -19,7 +19,7 @@ function LuP2PList() {
             gzip: true,
             headers: {
                 Cookie: '_lufaxSID="45e48f57-8d27-465d-8cf6-375c8a235190,Lbo3IVv60bHwmVPthisjApisrBOaLrwrongYtT/opsecretqYkeyXI1D5sUDuh58P/2j9cl0Tpej5ZEG7DgDfQ=="',
-                "User-Agent": "LuSpider/0.1 (For Personal Usage Only! kxuanobj@gmail.com)"
+                "User-Agent": "LuSpider/0.1"
             },
             callback: function (error, res, done) {
                 if (error) {
