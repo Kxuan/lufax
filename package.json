@@ -6,6 +6,8 @@
   "dependencies": {
     "cookie-parser": "^1.4.3",
     "crawler": "^1.0.5",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "gmail-send": "^1.2.10",
+    "mysql": "^2.13.0"
   }
 }

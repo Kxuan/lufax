@@ -1,0 +1,16 @@
+{
+  "email": {
+    "user": "kxuanobj@gmail.com",
+    "pass": "cwjmegaewpaxqskf",
+    "from": "\"LuFax Spider\" <kxuanobj@gmail.com>",
+    "to": "zhaizhaoxuan@xiaomi.com"
+  },
+  "mysql": {
+    "host": "localhost",
+    "port": "3306",
+    "user": "lu",
+    "password": "lu",
+    "database": "lu",
+    "connectionLimit": 10
+  }
+}
